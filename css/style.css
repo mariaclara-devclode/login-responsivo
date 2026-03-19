@@ -1,0 +1,130 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* MOBILE FIRST */
+body {
+  background-color: #f4f4f4;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ESCONDE BRANDING NO CELULAR */
+.branding {
+  display: none;
+}
+
+/* FORMULÁRIO */
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  gap: 15px;
+  width: 100%;
+}
+
+/* TÍTULO */
+.login h2 {
+  text-align: center;
+}
+
+/* CAMPOS */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* INPUTS */
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* BOTÃO */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* EFEITO HOVER */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* LINK */
+a {
+  text-align: center;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+/* BREAKPOINT HD (1280px) */
+
+
+@media (min-width: 1280px) {
+
+  .container {
+    flex-direction: row;
+  }
+
+  /* MOSTRA BRANDING */
+  .branding {
+    display: flex;
+    flex: 1;
+    background-color: #007bff;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .login {
+    flex: 1;
+    max-width: 50%;
+    margin: auto;
+  }
+}
+
+
+/* BREAKPOINT FULL HD (1920px) */
+
+@media (min-width: 1920px) {
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .login {
+    padding: 50px;
+    gap: 20px;
+  }
+
+  input {
+    padding: 12px;
+  }
+
+  button {
+    padding: 14px;
+  }
+}
