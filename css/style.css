@@ -57,7 +57,7 @@ button {
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background-color: #007bff;
+  background-color: #06d47471;
   color: white;
   cursor: pointer;
   transition: 0.3s;
@@ -65,23 +65,20 @@ button {
 
 /* EFEITO HOVER */
 button:hover {
-  background-color: #0056b3;
+  background-color: #0dd4c30c;
 }
 
 /* LINK */
 a {
   text-align: center;
   font-size: 14px;
-  color: #007bff;
+  color: #161718;
   text-decoration: none;
 }
 
-
 /* BREAKPOINT HD (1280px) */
 
-
 @media (min-width: 1280px) {
-
   .container {
     flex-direction: row;
   }
@@ -90,8 +87,8 @@ a {
   .branding {
     display: flex;
     flex: 1;
-    background-color: #007bff;
-    color: white;
+    background-color: #b3b8bd;
+    color: rgb(34, 34, 34);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -105,11 +102,9 @@ a {
   }
 }
 
-
 /* BREAKPOINT FULL HD (1920px) */
 
 @media (min-width: 1920px) {
-
   .container {
     max-width: 1200px;
     margin: auto;
@@ -127,4 +122,8 @@ a {
   button {
     padding: 14px;
   }
+}
+
+.imagem{
+    background-image: url "(https://hubify.com.br/wp-content/uploads/2017/04/criar-um-site-1024x1024.jpg);"
 }
