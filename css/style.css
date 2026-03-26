@@ -17,11 +17,16 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-image: url("https://hubify.com.br/wp-content/uploads/2017/04/criar-um-site-1024x1024.jpg");
+  background-size: cove;
+  background-position: center;
+  background-repeat:no-repeat ;
+
 }
 
 /* ESCONDE BRANDING NO CELULAR */
 .branding {
     width: 50%;
+    display: none;
   
 }
 
@@ -34,6 +39,8 @@ body {
   gap: 15px;
   width: 100%;
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
 }
 
 /* TÍTULO */
@@ -50,9 +57,10 @@ body {
 
 /* INPUTS */
 input {
-  padding: 10px;
-  border-radius: 8px;
+  padding: 12px;
+  border-radius: 10px;
   border: 1px solid #ccc;
+  outline: none;
 }
 
 /* BOTÃO */
@@ -62,6 +70,7 @@ button {
   border-radius: 8px;
   background-color: #06d47471;
   color: white;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -99,6 +108,7 @@ a {
   }
 
   .login {
+  
     flex: 1;
     max-width: 50%;
     margin: auto;
@@ -119,11 +129,11 @@ a {
   }
 
   input {
-    padding: 12px;
+    padding: 14px;
   }
 
   button {
-    padding: 14px;
+    padding: 16px;
   }
 }
 
